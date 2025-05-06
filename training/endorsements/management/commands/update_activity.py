@@ -72,7 +72,7 @@ def get_hours(endorsement: dict) -> float:
     except:
         return -1
     activity = calculate_activity(endorsement, response)
-    return activity
+    return round(activity,2)
 
 
 class Command(BaseCommand):
